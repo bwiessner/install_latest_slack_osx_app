@@ -65,7 +65,7 @@ localSlackVersion=$(defaults read "$APP_PATH/Contents/Info.plist" "$APP_VERSION_
 fi
 
 #if you want slack to reopen unhash next line
-#su - "${consoleuser}" -c 'open -a Slack.app'
+#su - "${consoleuser}" -c 'open -a /Applications/Slack.app'
 
     exit 0
 fi
