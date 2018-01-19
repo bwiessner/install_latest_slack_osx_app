@@ -3,6 +3,7 @@
 #if you want slack to quit - in use with a jamf notifcation policy unhash next line
 #pkill Slack*
 
+#gets current logged in user
 consoleuser=$(ls -l /dev/console | cut -d " " -f4)
 
 APP_NAME="Slack.app"
