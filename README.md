@@ -1,3 +1,6 @@
+*** Currently Broken - Slack changed from DMG back to zip format - will update soon with logic for both with if then ** 
+
+
 This script will download a dmg containing the latest version of the Slack app for OS X and install it by placing the app from the downloaded archive in the /Applications directory.
 
 How the script works:
