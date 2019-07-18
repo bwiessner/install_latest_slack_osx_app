@@ -19,7 +19,7 @@ slackDmgPath="/tmp/$dmgName"
 ################################
 
 #find new version of Slack
-currentSlackVersion=$(/usr/bin/curl -s 'https://downloads.slack-edge.com/mac_releases/releases.json' | grep -o "[0-9]\.[0-9]\.[0-9]" | tail -1)
+currentSlackVersion=$(/usr/bin/curl -s 'https://slack.com/api/desktop.releases.update?platform=darwin&os_version=10.13.5&app_version=0&channel=prod' | grep -o "[0-9]\.[0-9]\.[0-9]" | tail -1)
 
 if [ -d "$APP_PATH" ]; then
     localSlackVersion=$(defaults read "$APP_PATH/Contents/Info.plist" "$APP_VERSION_KEY")
